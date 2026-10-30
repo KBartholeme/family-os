@@ -63,6 +63,31 @@
   document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'visible') checkRemote(); });
   setInterval(checkRemote, 60000);
 
+  // ---------------------------------------------------------------- Familienkasse (Finanzen)
+  const MONTHS = { de: ['Januar', 'Februar', 'März', 'April', 'Mai', 'Juni', 'Juli', 'August', 'September', 'Oktober', 'November', 'Dezember'],
+                   en: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'] };
+  const mName = (m) => ({ de: MONTHS.de[+m.slice(5, 7) - 1], en: MONTHS.en[+m.slice(5, 7) - 1] });
+  async function loadKasse() {
+    try {
+      const [snap, budgets, wishes, wealth, ideas] = await Promise.all([
+        sb.from('fk_snapshot').select('data').eq('lang', 'de').maybeSingle(),
+        sb.from('fk_budgets').select('month, bucket, amount'),
+        sb.from('fk_wishes').select('month, amount, planned'),
+        sb.from('fk_wealth_entries').select('month'),
+        sb.from('fk_ideas').select('title, owner, status').eq('status', 'doing'),
+      ]);
+      const d = snap.data && snap.data.data; if (!d) return;
+      const p = d.plan, b = { ...p.budgets };
+      (budgets.data || []).filter((x) => x.month === p.month).forEach((x) => { b[x.bucket] = +x.amount; });
+      const planned = (wishes.data || []).filter((w) => w.month === p.month && w.planned).reduce((a, w) => a + +w.amount, 0);
+      const now = new Date(), cur = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}`;
+      const prev = new Date(now.getFullYear(), now.getMonth() - 1, 1), due = `${prev.getFullYear()}-${String(prev.getMonth() + 1).padStart(2, '0')}`;
+      const last = (wealth.data || []).map((w) => w.month).sort().pop() || '';
+      window.FK_SUM = { planSave: Math.round(p.income - p.fix_monthly - p.due_sum - b.grund - b.wunsch - planned), planName: mName(p.month),
+        needsEntry: last < due, dueName: mName(cur), doing: ideas.data || [] };
+    } catch (e) { /* Familienkasse nicht erreichbar: Planet zeigt nur den Namen */ }
+  }
+
   // ---------------------------------------------------------------- Anmeldung
   function showLogin(title, text) {
     $('wrap').hidden = true; $('login').hidden = false;
@@ -83,6 +108,7 @@
     const { data, error } = await sb.from('fos_state').select('key, data, version');
     if (error) { showLogin('Keine Verbindung', 'Daten konnten nicht geladen werden: ' + error.message); return; }
     data.forEach((r) => { cache[r.key] = { data: r.data, version: r.version }; });
+    await loadKasse();
     let prefUser = null, prefLang = null;
     try { prefUser = localStorage.getItem('fom.pref.user'); prefLang = localStorage.getItem('fom.pref.lang'); } catch (e) {}
     window.FOM_USER = prefUser || (/natalia/i.test(me) ? 'Natalia' : 'André');

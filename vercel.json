@@ -4,10 +4,44 @@
   "installCommand": "echo 'nichts zu installieren'",
   "buildCommand": "rm -rf public && cp -r site public",
   "outputDirectory": "public",
-  "headers": [{ "source": "/(.*)", "headers": [
-    { "key": "X-Frame-Options", "value": "DENY" },
-    { "key": "Referrer-Policy", "value": "same-origin" },
-    { "key": "X-Content-Type-Options", "value": "nosniff" },
-    { "key": "X-Robots-Tag", "value": "noindex" }
-  ] }]
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "same-origin"
+        },
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex"
+        }
+      ]
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/kasse",
+      "destination": "/kasse/",
+      "permanent": true
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/kasse/",
+      "destination": "https://familienkasse-nine.vercel.app/"
+    },
+    {
+      "source": "/kasse/:path*",
+      "destination": "https://familienkasse-nine.vercel.app/:path*"
+    }
+  ]
 }

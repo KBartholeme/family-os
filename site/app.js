@@ -62,12 +62,15 @@ const DOM = {
   admin: {icon: "🗂️", c: "var(--plum)", short: L("Papierkram", "Paperwork"), name: L("Papierkram", "Paperwork"), desc: L("Fristen, Verträge und Dokumente an einem Ort", "Deadlines, contracts and documents in one place"),
     get sections() { return [{h: L("Fristen", "Deadlines"), items: openRadar().map(i => ({t: i.t, o: i.o, due: i.due}))}]; },
     sig: s => { const n = s[0].items.filter(i => dayDiff(i.due) <= 60).length; return lang === "de" ? `${n} bald fällig` : `${n} due soon`; }},
-  money: {icon: "💰", c: "var(--teal)", short: L("Finanzen", "Money"), name: L("Finanzen", "Money"), desc: L("Überblick, Fixkosten, Sparziele und Potenziale – ohne Buchhaltung", "Overview, fixed costs, savings and potentials – no bookkeeping"),
-    get sections() { const first = new Date(TODAY.getFullYear(), TODAY.getMonth(), 1);
-      return [{h: L("Finanzen", "Money"), items: [
-        ...(checkDue() ? [{t: L("Monats-Check Finanzen", "Monthly money check"), o: "AN", due: first}] : []),
-        ...FIN.potentials.filter(p => p.status === "open" || p.status === "progress").map(p => ({t: p.t, o: p.o}))]}]; },
-    sig: () => checkDue() ? (lang === "de" ? "Check fällig" : "Check due") : (lang === "de" ? "im Plan" : "on track")},
+  // Finanzen = die Familienkasse (läuft unter /kasse/ auf derselben Adresse, gleicher Login). Zahlen kommen aus ihrer Auswertung.
+  money: {icon: "💰", c: "var(--teal)", short: L("Finanzen", "Money"), name: L("Familienkasse", "Family finances"), desc: L("Rückblick, Planung, Fixkosten, Potenziale und Vermögen", "Review, planning, fixed costs, potentials and wealth"),
+    get sections() { const k = window.FK_SUM, items = [];
+      if (k && k.needsEntry) items.push({t: L(`Vermögensstand für ${k.dueName.de} eintragen`, `Enter ${k.dueName.en} balance`), o: "AN", due: TODAY});
+      if (k && k.planSave < 0) items.push({t: L(`Plan ${k.planName.de} geht noch nicht auf`, `${k.planName.en} plan doesn't add up yet`), o: "AN", warn: true});
+      (k ? k.doing : []).forEach(i => items.push({t: i.title, o: i.owner === "Natalia" ? "N" : i.owner === "André" ? "A" : "AN"}));
+      return [{h: L("Familienkasse", "Family finances"), items}]; },
+    sig: () => { const k = window.FK_SUM; if (!k) return lang === "de" ? "Familienkasse" : "Family finances";
+      const v = (k.planSave > 0 ? "+" : "") + eur(k.planSave); return lang === "de" ? `Plan ${k.planName.de}: ${v}` : `${k.planName.en} plan: ${v}`; }},
   health: {icon: "❤️", c: "var(--rose)", short: L("Gesundheit", "Health"), name: L("Gesundheit", "Health"), desc: L("Vorsorge, Arzttermine, Steckbriefe und Ärzte", "Check-ups, appointments, profiles and doctors"),
     get sections() { return [{h: L("Termine", "Appointments"), items: healthItems().map(i => ({o: i.o, warn: hGroup(i) === "check",
       t: i.state === "unknown" ? L(`${tx(i.t)} – erledigt?`, `${tx(i.t)} – done?`) : i.t, due: i.booked ? new Date(i.booked) : i.due}))}]; },
@@ -1381,6 +1384,7 @@ const FIN_EXAMPLES = () => ({
 const FIN_KEY = "fom.fin.v1";
 let FIN = (() => { try { const s = FOMStore.getItem(FIN_KEY); if (s) return JSON.parse(s); } catch (e) {} return FIN_EXAMPLES(); })();
 const saveFin = () => { try { FOMStore.setItem(FIN_KEY, JSON.stringify(FIN)); } catch (e) {} };
+FIN.savings = []; FIN.potentials = [];  // Finanzen laufen jetzt über die Familienkasse
 const eur = n => (+n || 0).toLocaleString(lang === "de" ? "de-DE" : "en-GB", {style: "currency", currency: "EUR", maximumFractionDigits: 0});
 const monthly = x => (+x.amount || 0) / (+x.cycle || 1);
 
@@ -1854,6 +1858,7 @@ document.addEventListener("click", e => { const a = e.target.closest('a[href^="#
 window.addEventListener("popstate", () => { cur = location.hash || "#/"; onRoute(); });
 
 function render() {
+  if (route()[0] === "money") { location.href = "/kasse/"; return; }
   const r = route(), t = T[lang], v = document.getElementById("view");
   document.documentElement.lang = lang;
   seg("user", [["André", "André"], ["Natalia", "Natalia"]], user, x => { user = x; try { localStorage.setItem("fom.pref.user", x); } catch (e) {} render(); });
