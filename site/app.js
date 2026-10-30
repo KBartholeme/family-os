@@ -170,28 +170,43 @@ function signal(id) {
 
 /* ---------- Views ---------- */
 function vCenter() {
-  const t = T[lang], ml = mentalLoad(), tot = ml.A + ml.N, pa = Math.round(ml.A / tot * 100), myP = me() === "A" ? pa : 100 - pa;
-  const pos = ORBIT.map((_, i) => { const r = (-90 + i * 360 / ORBIT.length) * Math.PI / 180; return [50 + 39 * Math.cos(r), 50 + 39 * Math.sin(r)]; });
-  const ring = `<svg class="ring" viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="39"/>${pos.map(([x, y]) => `<line x1="50" y1="50" x2="${x}" y2="${y}"/>`).join("")}</svg>`;
-  const people = [["A", "var(--sky)"], ["N", "var(--rose)"], ["Na", "var(--coral)"], ["L", "var(--mustard)"]];
-  const sun = `<div class="sun"><div><div class="sun-t">${t.family}</div>
-    <div class="avatars">${people.map(([i, c]) => `<span class="av" style="background:${c}">${i}</span>`).join("")}</div>
-    <div class="sun-sub">André · Natalia · Nara · Levi</div></div></div>`;
-  const planets = ORBIT.map((id, i) => { const d = DOM[id], s = signal(id);
-    return `<button class="planet" style="left:${pos[i][0]}%;top:${pos[i][1]}%;--c:${d.c};--d:${-i * .7}s" data-go="#/${id}" title="${tx(d.name)}">
-      ${s.urgent ? `<span class="badge">${s.urgent}</span>` : ""}<span class="ic">${ic(id)}</span><span class="nm">${tx(d.short)}</span><span class="sig">${s.sig}</span></button>`; }).join("");
-  const brief = briefing().map(i => { const d = DOM[i.dom], n = i.due ? dayDiff(i.due) : null;
-    return `<a class="note-item" href="#/${i.dom}" style="--c:${d.c}"><span class="ic">${ic(i.dom)}</span>
-      <span class="tt">${tx(i.t)}<small>${mine(i.o) ? t.forYou : i.o ? PEOPLE[i.o].name : ""}</small></span>
-      <span class="when ${i.warn || n <= 30 ? "w" : ""}">${i.warn ? t.check : n < 0 ? t.overdue(n) : t.inDays(n)}</span></a>`; }).join("");
-  return `<div class="centerwrap"><div><div class="orbit">${ring}${sun}${planets}</div><p class="orbit-hint">${t.arrange}</p></div>
-    <aside class="side">
-      <div class="card"><h3>${t.brief}</h3>${brief}</div>
-    </aside></div>${weekStrip()}
-    <section class="card loadcard"><div class="lc-main"><h3>${t.load}</h3><p class="load-big">${t.youCarry(myP)}</p>
-        <div class="loadbar"><div style="width:${pa}%;background:var(--sky)"></div><div style="width:${100 - pa}%;background:var(--rose)"></div></div>
-        <div class="loadlbl"><span>André ${pa} %</span><span>Natalia ${100 - pa} %</span></div></div>
-      <div class="lc-feel">${lastFeel()}</div></section>`;
+  // Startseite als Kachel-Raster (statt Planeten): oben die Familie und was ansteht, darunter alle Bereiche.
+  const t = T[lang], ml = mentalLoad(), tot = ml.A + ml.N || 1, pa = Math.round(ml.A / tot * 100), myP = me() === "A" ? pa : 100 - pa;
+  const people = [["A", "var(--sky)", "André"], ["N", "var(--rose)", "Natalia"], ["Na", "var(--coral)", "Nara"], ["L", "var(--mustard)", "Levi"]];
+  const all = briefing();
+  const brief = all.slice(0, 4).map(i => { const d = DOM[i.dom], n = i.due ? dayDiff(i.due) : null;
+    return `<a class="brow" href="${i.dom === "money" ? "/kasse/" : "#/" + i.dom}" ${i.dom === "money" ? "" : `data-go="#/${i.dom}"`}><span class="bdot" style="background:${d.c}">${ic(i.dom)}</span>
+      <span class="bt">${tx(i.t)}<small>${mine(i.o) ? t.forYou : i.o ? (PEOPLE[i.o] || {name: "André + Natalia"}).name : ""}</small></span>
+      <span class="bw ${i.warn || (n !== null && n <= 7) ? "w" : ""}">${i.warn ? t.check : n === null ? "" : n < 0 ? t.overdue(n) : t.inDays(n)}</span></a>`; }).join("");
+  const next = id => { const items = (DOM[id].sections || []).flatMap(x => x.items);
+    const i = items.filter(x => x.warn)[0] || items.filter(x => x.due).sort((x, y) => x.due - y.due)[0] || items[0];
+    return i ? `${tx(i.t)}${i.due && !i.warn ? ` · ${dayDiff(i.due) < 0 ? t.overdue(dayDiff(i.due)) : t.inDays(dayDiff(i.due))}` : ""}` : (lang === "de" ? "Nichts Dringendes" : "Nothing urgent"); };
+  const tiles = ORBIT.map(id => { const d = DOM[id], sg = signal(id), href = id === "money" ? "/kasse/" : `#/${id}`;
+    return `<a class="tile ${id === "kids" ? "wide" : ""}" href="${href}" ${id === "money" ? "" : `data-go="#/${id}"`} style="--c:${d.c}">
+      <span class="tile-top"><span class="tile-ic">${ic(id)}</span>${sg.urgent ? `<span class="tile-badge">${sg.urgent}</span>` : ""}</span>
+      <b>${tx(d.short)}</b><span class="tile-sig">${sg.sig}</span><span class="tile-next">${esc(next(id))}</span></a>`; }).join("");
+  return `<div class="bento">
+    <section class="famcard">
+      <div class="fam-top"><span class="label">${lang === "de" ? "Unsere Familie" : "Our family"}</span>
+        <span class="fam-av">${people.map(([i, c, n]) => `<span class="av" style="background:${c}" title="${n}">${i}</span>`).join("")}</span></div>
+      <div class="fam-big">${all.length ? (lang === "de" ? `${all.length} ${all.length === 1 ? "Sache steht" : "Sachen stehen"} an` : `${all.length} thing${all.length === 1 ? "" : "s"} coming up`) : (lang === "de" ? "Alles im Griff" : "All under control")}</div>
+      <div class="brows">${brief || `<p class="muted">${lang === "de" ? "Gerade ist nichts dringend. Genießt es." : "Nothing urgent right now. Enjoy it."}</p>`}</div>
+    </section>
+    <section class="loadtile"><span class="label">${t.load}</span><p class="load-big">${t.youCarry(myP)}</p>
+      <div class="loadbar"><div style="width:${pa}%;background:var(--a)"></div><div style="width:${100 - pa}%;background:var(--n)"></div></div>
+      <div class="loadlbl"><span>André ${pa} %</span><span>Natalia ${100 - pa} %</span></div>
+      <div class="lc-feel">${lastFeel()}</div></section>
+    ${tiles}
+  </div>${weekStrip()}`;
+}
+// Feste Navigation zu allen Bereichen (Seitenleiste am Monitor, Leiste unten am Handy)
+function renderNav() {
+  const nav = document.getElementById("fnav"); if (!nav) return;
+  const here = route()[0] || "";
+  const items = [["", "☀️", lang === "de" ? "Center" : "Center"], ...["week", ...ORBIT].map(id => [id, DOM[id].icon, tx(DOM[id].short)])];
+  nav.innerHTML = `<div class="fbrand"><span class="label">${lang === "de" ? "Unsere Familie" : "Our family"}</span><b><span class="hl">Family</span> OS</b></div>
+    <div class="flinks">${items.map(([id, icon, name]) => `<a href="${id === "money" ? "/kasse/" : "#/" + id}" ${id === "money" ? "" : `data-nav="#/${id}"`} class="${id === here ? "on" : ""}"><span class="fi">${icon}</span><span class="fn">${name}</span></a>`).join("")}</div>`;
+  nav.querySelectorAll("[data-nav]").forEach(a => a.onclick = e => { e.preventDefault(); go(a.dataset.nav); });
 }
 const hero = (icon, c, name, sub, letter) => `<div class="hero" style="--c:${c}"><span class="ic"${letter ? ' style="font-family:var(--display);font-weight:800"' : ""}>${icon}</span><div><h1>${name}</h1><p>${sub}</p></div></div>`;
 
@@ -1901,7 +1916,8 @@ function render() {
   v.innerHTML = !r[0] ? vCenter() : r[0] === "admin" ? vAdmin(r) : r[0] === "team" ? vTeam(r) : r[0] === "home" ? vHome(r) : r[0] === "health" ? vHealth(r) : r[0] === "goals" ? vGoals(r) : r[0] === "week" ? vWeek(r) : r[0] === "money" ? vMoney(r) : r[0] === "kids" ? vKidsRoute(r) : vDomain(r[0]);
   document.getElementById("note").textContent = t.note;
   bindOrbit(v);
-  v.querySelectorAll("[data-go]").forEach(b => b.onclick = () => { if (Date.now() - dragEnded < 300) return; const rc = b.getBoundingClientRect(), vr = v.getBoundingClientRect();
+  renderNav();
+  v.querySelectorAll("[data-go]").forEach(b => b.onclick = e => { e.preventDefault(); if (Date.now() - dragEnded < 300) return; const rc = b.getBoundingClientRect(), vr = v.getBoundingClientRect();
     zoomFrom = `${rc.left + rc.width / 2 - vr.left}px ${rc.top + rc.height / 2 - vr.top}px`; go(b.dataset.go); });
   if (r[0] === "admin") bindAdmin(v);
   if (r[0] === "team") bindTeam(v);

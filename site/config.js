@@ -3,5 +3,5 @@
 window.FOS = {
   url: 'https://zcknqcedrxfromgdxhrd.supabase.co',
   key: 'sb_publishable_JLyqVCm1dKrbPMB57J2USg_aRWSRnmI',
-  v: 52,
+  v: 53,
 };

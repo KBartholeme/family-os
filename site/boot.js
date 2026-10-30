@@ -117,7 +117,7 @@
     const s = document.createElement('script'); s.src = 'app.js?v=' + (cfg.v || 1); document.body.appendChild(s);
     const out = document.createElement('a'); out.href = '#'; out.textContent = 'Abmelden';
     out.addEventListener('click', async (e) => { e.preventDefault(); await sb.auth.signOut(); location.hash = ''; location.reload(); });
-    const note = $('note'); const tail = document.createElement('div'); tail.style.marginTop = '6px'; tail.append(`Angemeldet als ${me} · `, out); note.after(tail);
+    const note = $('note'); const tail = document.createElement('div'); tail.className = 'footnote'; tail.style.marginTop = '6px'; tail.append(`Angemeldet als ${me} · `, out); note.after(tail);
   }
 
   async function start() {
