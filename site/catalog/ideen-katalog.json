@@ -1,0 +1,1798 @@
+{
+ "version": 1,
+ "ages": {
+  "from": 0,
+  "to": 72,
+  "unit": "months"
+ },
+ "note": {
+  "de": "Anregungen, keine Normen – jedes Kind entwickelt sich in seinem eigenen Tempo.",
+  "en": "Suggestions, not norms – every child develops at their own pace."
+ },
+ "areas": {
+  "motor": {
+   "de": "Motorik & Sport",
+   "en": "Motor skills & sport"
+  },
+  "lang": {
+   "de": "Sprache & Lesen",
+   "en": "Language & reading"
+  },
+  "social": {
+   "de": "Sozial-emotional",
+   "en": "Social-emotional"
+  },
+  "mind": {
+   "de": "Denken & Neugier",
+   "en": "Thinking & curiosity"
+  },
+  "creative": {
+   "de": "Kreativität & Musik",
+   "en": "Creativity & music"
+  },
+  "indep": {
+   "de": "Selbstständigkeit",
+   "en": "Independence"
+  },
+  "nature": {
+   "de": "Natur & Welt",
+   "en": "Nature & world"
+  },
+  "langs": {
+   "de": "Sprachen",
+   "en": "Languages"
+  }
+ },
+ "ideas": [
+  {
+   "id": "motor-001",
+   "area": "motor",
+   "from": 0,
+   "to": 4,
+   "de": "Bauchlage-Zeit",
+   "en": "Tummy time",
+   "tip_de": "Kurz und oft, auf Augenhöhe mitmachen",
+   "tip_en": "Short and often, get down at eye level"
+  },
+  {
+   "id": "motor-002",
+   "area": "motor",
+   "from": 0,
+   "to": 6,
+   "de": "Greifspiele mit Rassel",
+   "en": "Grasping games with a rattle",
+   "tip_de": "Rassel seitlich anbieten, nicht in die Hand drücken",
+   "tip_en": "Offer it from the side instead of placing it in the hand"
+  },
+  {
+   "id": "motor-003",
+   "area": "motor",
+   "from": 0,
+   "to": 6,
+   "de": "Babymassage",
+   "en": "Baby massage",
+   "tip_de": "Warme Hände, ruhiger Moment nach dem Baden",
+   "tip_en": "Warm hands, a calm moment after the bath"
+  },
+  {
+   "id": "motor-004",
+   "area": "motor",
+   "from": 2,
+   "to": 7,
+   "de": "Strampeln auf der Decke",
+   "en": "Kicking on a blanket",
+   "tip_de": "Ohne Windel auf warmer Decke – viel Bewegungsfreiheit",
+   "tip_en": "Diaper-free on a warm blanket – lots of freedom to move"
+  },
+  {
+   "id": "motor-005",
+   "area": "motor",
+   "from": 3,
+   "to": 8,
+   "de": "Drehen üben",
+   "en": "Practice rolling over",
+   "tip_de": "Spielzeug seitlich hinlegen, damit sich das Drehen lohnt",
+   "tip_en": "Place a toy to the side so rolling is worth it"
+  },
+  {
+   "id": "motor-006",
+   "area": "motor",
+   "from": 5,
+   "to": 10,
+   "de": "Krabbelparcours aus Kissen",
+   "en": "Cushion crawling course",
+   "tip_de": "Kissen, Decken und Tunnel aus Kartons",
+   "tip_en": "Cushions, blankets and cardboard tunnels"
+  },
+  {
+   "id": "motor-007",
+   "area": "motor",
+   "from": 6,
+   "to": 12,
+   "de": "Babyschwimmen",
+   "en": "Baby swimming",
+   "tip_de": "Wassergewöhnung mit viel Körperkontakt",
+   "tip_en": "Water confidence with lots of body contact"
+  },
+  {
+   "id": "motor-008",
+   "area": "motor",
+   "from": 7,
+   "to": 12,
+   "de": "Hochziehen an Möbeln",
+   "en": "Pulling up on furniture",
+   "tip_de": "Kippsichere Möbel, Ecken entschärfen",
+   "tip_en": "Tip-proof furniture, padded corners"
+  },
+  {
+   "id": "motor-009",
+   "area": "motor",
+   "from": 8,
+   "to": 14,
+   "de": "An der Hand laufen",
+   "en": "Walking hand in hand",
+   "tip_de": "Lieber an beiden Händen als hochziehen",
+   "tip_en": "Hold both hands instead of pulling up"
+  },
+  {
+   "id": "motor-010",
+   "area": "motor",
+   "from": 9,
+   "to": 15,
+   "de": "Schiebewagen",
+   "en": "Push-along walker",
+   "tip_de": "Stabiler Schiebewagen statt Lauflernhilfe zum Hineinsetzen",
+   "tip_en": "A sturdy push toy rather than a sit-in walker"
+  },
+  {
+   "id": "motor-011",
+   "area": "motor",
+   "from": 10,
+   "to": 18,
+   "de": "Treppe krabbelnd hochklettern",
+   "en": "Crawling up stairs",
+   "tip_de": "Immer mit Begleitung, rückwärts runter üben",
+   "tip_en": "Always supervised, practice going down backwards"
+  },
+  {
+   "id": "motor-012",
+   "area": "motor",
+   "from": 12,
+   "to": 24,
+   "de": "Barfuß auf verschiedenen Untergründen",
+   "en": "Barefoot on different surfaces",
+   "tip_de": "Gras, Sand, Kies, Teppich – Füße trainieren mit",
+   "tip_en": "Grass, sand, gravel, rug – trains the feet too"
+  },
+  {
+   "id": "motor-013",
+   "area": "motor",
+   "from": 12,
+   "to": 24,
+   "de": "Bälle rollen und werfen",
+   "en": "Rolling and throwing balls",
+   "tip_de": "Weiche Bälle, gegenseitig zurollen",
+   "tip_en": "Soft balls, roll them back and forth"
+  },
+  {
+   "id": "motor-014",
+   "area": "motor",
+   "from": 14,
+   "to": 30,
+   "de": "Bobbycar / Rutschauto",
+   "en": "Ride-on car",
+   "tip_de": "Abstoßen stärkt Beine und Gleichgewicht",
+   "tip_en": "Pushing off builds legs and balance"
+  },
+  {
+   "id": "motor-015",
+   "area": "motor",
+   "from": 15,
+   "to": 30,
+   "de": "Klettern auf kleinen Spielplatzgerüsten",
+   "en": "Climbing small playground frames",
+   "tip_de": "Eigene Grenzen finden lassen, in der Nähe bleiben",
+   "tip_en": "Let them find their limits, stay close"
+  },
+  {
+   "id": "motor-016",
+   "area": "motor",
+   "from": 18,
+   "to": 30,
+   "de": "Tanzen zu Musik",
+   "en": "Dancing to music",
+   "tip_de": "Stopp-Tanz: einfrieren, wenn die Musik aufhört",
+   "tip_en": "Freeze dance: stop when the music stops"
+  },
+  {
+   "id": "motor-017",
+   "area": "motor",
+   "from": 18,
+   "to": 36,
+   "de": "Treppen gehen an der Hand",
+   "en": "Walking up stairs holding hands",
+   "tip_de": "Erst Nachstellschritt, später abwechselnd",
+   "tip_en": "First one step at a time, later alternating feet"
+  },
+  {
+   "id": "motor-018",
+   "area": "motor",
+   "from": 20,
+   "to": 40,
+   "de": "Laufrad ausprobieren",
+   "en": "Try a balance bike",
+   "tip_de": "Sattel so tief, dass beide Füße flach aufsetzen",
+   "tip_en": "Saddle low enough for both feet to be flat"
+  },
+  {
+   "id": "motor-019",
+   "area": "motor",
+   "from": 24,
+   "to": 42,
+   "de": "Hüpfen mit beiden Füßen",
+   "en": "Jumping with both feet",
+   "tip_de": "Von der untersten Stufe oder über ein Seil am Boden",
+   "tip_en": "Off the bottom step or over a rope on the ground"
+  },
+  {
+   "id": "motor-020",
+   "area": "motor",
+   "from": 24,
+   "to": 48,
+   "de": "Eltern-Kind-Turnen",
+   "en": "Parent-and-child gym",
+   "tip_de": "Feste Gruppe, viel Bewegung, andere Kinder",
+   "tip_en": "A regular group, lots of movement, other kids"
+  },
+  {
+   "id": "motor-021",
+   "area": "motor",
+   "from": 30,
+   "to": 54,
+   "de": "Balancieren",
+   "en": "Balancing",
+   "tip_de": "Bordstein, Baumstamm, Seil am Boden",
+   "tip_en": "Kerb, tree trunk, a rope on the ground"
+  },
+  {
+   "id": "motor-022",
+   "area": "motor",
+   "from": 30,
+   "to": 60,
+   "de": "Fangen und Werfen mit großem Ball",
+   "en": "Catching and throwing a big ball",
+   "tip_de": "Erst aus kurzer Distanz, Arme vorstrecken",
+   "tip_en": "Start close, arms stretched out"
+  },
+  {
+   "id": "motor-023",
+   "area": "motor",
+   "from": 36,
+   "to": 60,
+   "de": "Kinderturnen",
+   "en": "Kids gymnastics",
+   "tip_de": "Rollen, Klettern, Springen in der Gruppe",
+   "tip_en": "Rolling, climbing, jumping in a group"
+  },
+  {
+   "id": "motor-024",
+   "area": "motor",
+   "from": 36,
+   "to": 60,
+   "de": "Selbst anschwingen auf der Schaukel",
+   "en": "Swinging by themselves",
+   "tip_de": "Beine vor und zurück – erst mit kleinem Schubs",
+   "tip_en": "Legs forward and back – start with a small push"
+  },
+  {
+   "id": "motor-025",
+   "area": "motor",
+   "from": 40,
+   "to": 66,
+   "de": "Roller fahren",
+   "en": "Riding a scooter",
+   "tip_de": "Mit Helm, erst auf ruhigen Wegen",
+   "tip_en": "With a helmet, start on quiet paths"
+  },
+  {
+   "id": "motor-026",
+   "area": "motor",
+   "from": 42,
+   "to": 72,
+   "de": "Fahrrad ohne Stützräder",
+   "en": "Bike without training wheels",
+   "tip_de": "Nach dem Laufrad geht es oft ganz schnell",
+   "tip_en": "After a balance bike it often happens quickly"
+  },
+  {
+   "id": "motor-027",
+   "area": "motor",
+   "from": 48,
+   "to": 72,
+   "de": "Schwimmkurs (Seepferdchen)",
+   "en": "Swimming course (beginner badge)",
+   "tip_de": "Kurse sind oft lange im Voraus ausgebucht",
+   "tip_en": "Courses are often booked out far in advance"
+  },
+  {
+   "id": "motor-028",
+   "area": "motor",
+   "from": 48,
+   "to": 72,
+   "de": "Klettern oder Bouldern für Kinder",
+   "en": "Climbing or bouldering for kids",
+   "tip_de": "Kinderkurse in der Kletterhalle",
+   "tip_en": "Kids' sessions at a climbing gym"
+  },
+  {
+   "id": "motor-029",
+   "area": "motor",
+   "from": 48,
+   "to": 72,
+   "de": "Hüpfkästchen und einbeinig hüpfen",
+   "en": "Hopscotch and hopping on one leg",
+   "tip_de": "Mit Kreide auf den Gehweg malen",
+   "tip_en": "Draw it with chalk on the pavement"
+  },
+  {
+   "id": "motor-030",
+   "area": "motor",
+   "from": 54,
+   "to": 72,
+   "de": "Seilspringen ausprobieren",
+   "en": "Try skipping rope",
+   "tip_de": "Erst über ein schwingendes Seil springen",
+   "tip_en": "Start by jumping over a swinging rope"
+  },
+  {
+   "id": "motor-031",
+   "area": "motor",
+   "from": 54,
+   "to": 72,
+   "de": "Ballsport schnuppern",
+   "en": "Try a ball sport",
+   "tip_de": "Kinderfußball oder Ballschule im Verein",
+   "tip_en": "Kids' football or a ball school at a club"
+  },
+  {
+   "id": "motor-032",
+   "area": "motor",
+   "from": 56,
+   "to": 72,
+   "de": "Inliner oder Eislaufen",
+   "en": "Inline skating or ice skating",
+   "tip_de": "Mit Schutzausrüstung, an der Hand starten",
+   "tip_en": "With protective gear, start holding hands"
+  },
+  {
+   "id": "lang-033",
+   "area": "lang",
+   "from": 0,
+   "to": 6,
+   "de": "Den Alltag kommentieren",
+   "en": "Narrate the day",
+   "tip_de": "Beim Wickeln und Anziehen erzählen, was passiert",
+   "tip_en": "Talk about what's happening while changing and dressing"
+  },
+  {
+   "id": "lang-034",
+   "area": "lang",
+   "from": 0,
+   "to": 6,
+   "de": "Reime und Verse summen",
+   "en": "Hum rhymes and verses",
+   "tip_de": "Melodie und Rhythmus beruhigen und üben Laute",
+   "tip_en": "Melody and rhythm soothe and practise sounds"
+  },
+  {
+   "id": "lang-035",
+   "area": "lang",
+   "from": 0,
+   "to": 8,
+   "de": "Lieder und Wiegenlieder",
+   "en": "Songs and lullabies",
+   "tip_de": "Immer wieder dieselben – Wiederholung hilft",
+   "tip_en": "The same ones again and again – repetition helps"
+  },
+  {
+   "id": "lang-036",
+   "area": "lang",
+   "from": 2,
+   "to": 9,
+   "de": "Brabbeln nachahmen",
+   "en": "Imitate babbling",
+   "tip_de": "Laute zurückgeben, Pausen zum Antworten lassen",
+   "tip_en": "Echo the sounds, leave pauses for a reply"
+  },
+  {
+   "id": "lang-037",
+   "area": "lang",
+   "from": 4,
+   "to": 12,
+   "de": "Kontrast- und Stoffbücher",
+   "en": "Contrast and cloth books",
+   "tip_de": "Zum Anschauen, Anfassen und In-den-Mund-Nehmen",
+   "tip_en": "To look at, touch and mouth"
+  },
+  {
+   "id": "lang-038",
+   "area": "lang",
+   "from": 6,
+   "to": 15,
+   "de": "Fingerspiele und Kniereiter",
+   "en": "Finger plays and knee rides",
+   "tip_de": "„Hoppe hoppe Reiter“ & Co.",
+   "tip_en": "Classic knee-bouncing rhymes"
+  },
+  {
+   "id": "lang-039",
+   "area": "lang",
+   "from": 8,
+   "to": 18,
+   "de": "Zeigen und benennen",
+   "en": "Point and name",
+   "tip_de": "„Wo ist der Ball?“ – auf Zeigen mit Worten antworten",
+   "tip_en": "“Where's the ball?” – answer pointing with words"
+  },
+  {
+   "id": "lang-040",
+   "area": "lang",
+   "from": 10,
+   "to": 24,
+   "de": "Bilderbücher mit Klappen",
+   "en": "Lift-the-flap books",
+   "tip_de": "Kurz, robust, viel zum Entdecken",
+   "tip_en": "Short, sturdy, lots to discover"
+  },
+  {
+   "id": "lang-041",
+   "area": "lang",
+   "from": 12,
+   "to": 24,
+   "de": "Wörter erweitern",
+   "en": "Expand on words",
+   "tip_de": "Kind sagt „Auto“ – „Ja, ein rotes Auto!“",
+   "tip_en": "Child says “car” – “Yes, a red car!”"
+  },
+  {
+   "id": "lang-042",
+   "area": "lang",
+   "from": 15,
+   "to": 30,
+   "de": "Tiergeräusche und Wortspiele",
+   "en": "Animal sounds and word games",
+   "tip_de": "„Wie macht die Kuh?“ – Lachen erlaubt",
+   "tip_en": "“What does the cow say?” – laughing allowed"
+  },
+  {
+   "id": "lang-043",
+   "area": "lang",
+   "from": 18,
+   "to": 36,
+   "de": "Vorlese-Ritual vor dem Schlafen",
+   "en": "Bedtime reading ritual",
+   "tip_de": "Jeden Abend, gern dasselbe Buch",
+   "tip_en": "Every evening, the same book is fine"
+  },
+  {
+   "id": "lang-044",
+   "area": "lang",
+   "from": 20,
+   "to": 36,
+   "de": "Zwei-Wort-Sätze aufgreifen",
+   "en": "Pick up two-word sentences",
+   "tip_de": "Nicht korrigieren, richtig wiederholen",
+   "tip_en": "Don't correct, repeat it correctly"
+  },
+  {
+   "id": "lang-045",
+   "area": "lang",
+   "from": 24,
+   "to": 42,
+   "de": "Reime und Abzählverse",
+   "en": "Rhymes and counting-out verses",
+   "tip_de": "Reime schulen das Hören von Lauten",
+   "tip_en": "Rhymes train hearing sounds"
+  },
+  {
+   "id": "lang-046",
+   "area": "lang",
+   "from": 24,
+   "to": 48,
+   "de": "Besuch in der Bücherei",
+   "en": "Visit to the library",
+   "tip_de": "Kinderecke, eigene Bücher aussuchen lassen",
+   "tip_en": "Children's corner, let them pick books"
+  },
+  {
+   "id": "lang-047",
+   "area": "lang",
+   "from": 30,
+   "to": 54,
+   "de": "Beim Vorlesen Fragen stellen",
+   "en": "Ask questions while reading",
+   "tip_de": "„Was passiert wohl als Nächstes?“",
+   "tip_en": "“What do you think happens next?”"
+  },
+  {
+   "id": "lang-048",
+   "area": "lang",
+   "from": 36,
+   "to": 60,
+   "de": "Geschichten nacherzählen lassen",
+   "en": "Let them retell stories",
+   "tip_de": "Mit Bildern als Stütze",
+   "tip_en": "With pictures as prompts"
+  },
+  {
+   "id": "lang-049",
+   "area": "lang",
+   "from": 36,
+   "to": 60,
+   "de": "Hörspiele und Hörbücher",
+   "en": "Audio stories and audiobooks",
+   "tip_de": "Gemeinsam hören, danach darüber reden",
+   "tip_en": "Listen together, talk about it afterwards"
+  },
+  {
+   "id": "lang-050",
+   "area": "lang",
+   "from": 42,
+   "to": 72,
+   "de": "Buchstaben im Alltag entdecken",
+   "en": "Spot letters in everyday life",
+   "tip_de": "Mit dem eigenen Namen anfangen",
+   "tip_en": "Start with their own name"
+  },
+  {
+   "id": "lang-051",
+   "area": "lang",
+   "from": 48,
+   "to": 72,
+   "de": "Silben klatschen",
+   "en": "Clap syllables",
+   "tip_de": "„Ba-na-ne“ – drei Klatscher",
+   "tip_en": "“Ba-na-na” – three claps"
+  },
+  {
+   "id": "lang-052",
+   "area": "lang",
+   "from": 48,
+   "to": 72,
+   "de": "Witze und Rätsel erfinden",
+   "en": "Make up jokes and riddles",
+   "tip_de": "Sprachwitz macht Spaß und fördert",
+   "tip_en": "Wordplay is fun and builds skills"
+  },
+  {
+   "id": "lang-053",
+   "area": "lang",
+   "from": 54,
+   "to": 72,
+   "de": "Anlaute raten",
+   "en": "Guess the first sound",
+   "tip_de": "„Was beginnt mit M?“ – Mama, Maus, Mond",
+   "tip_en": "“What starts with M?” – mum, mouse, moon"
+  },
+  {
+   "id": "lang-054",
+   "area": "lang",
+   "from": 60,
+   "to": 72,
+   "de": "Erste Wörter malen und schreiben",
+   "en": "Draw and write first words",
+   "tip_de": "Ohne Druck – Schreiben wie es klingt ist okay",
+   "tip_en": "No pressure – writing as it sounds is fine"
+  },
+  {
+   "id": "social-055",
+   "area": "social",
+   "from": 0,
+   "to": 6,
+   "de": "Viel Körperkontakt und Tragen",
+   "en": "Lots of body contact and carrying",
+   "tip_de": "Nähe gibt Sicherheit – verwöhnen gibt es hier nicht",
+   "tip_en": "Closeness gives security – you can't spoil a baby"
+  },
+  {
+   "id": "social-056",
+   "area": "social",
+   "from": 0,
+   "to": 8,
+   "de": "Mimik spiegeln",
+   "en": "Mirror facial expressions",
+   "tip_de": "Lächeln erwidern, Gesichter machen",
+   "tip_en": "Smile back, make faces"
+  },
+  {
+   "id": "social-057",
+   "area": "social",
+   "from": 0,
+   "to": 12,
+   "de": "Feste Abendroutine mit Nähe",
+   "en": "A cosy fixed bedtime routine",
+   "tip_de": "Gleiche Abfolge gibt Halt",
+   "tip_en": "The same sequence gives security"
+  },
+  {
+   "id": "social-058",
+   "area": "social",
+   "from": 3,
+   "to": 10,
+   "de": "Guck-guck-Spiele",
+   "en": "Peekaboo",
+   "tip_de": "Weg und wieder da – Grundlage für Vertrauen",
+   "tip_en": "Gone and back again – a basis for trust"
+  },
+  {
+   "id": "social-059",
+   "area": "social",
+   "from": 6,
+   "to": 14,
+   "de": "Fremdeln begleiten",
+   "en": "Support stranger anxiety",
+   "tip_de": "Neue Menschen langsam kennenlernen, auf dem Arm",
+   "tip_en": "Meet new people slowly, from your arms"
+  },
+  {
+   "id": "social-060",
+   "area": "social",
+   "from": 8,
+   "to": 18,
+   "de": "Krabbel- oder Spielgruppe",
+   "en": "Toddler or playgroup",
+   "tip_de": "Andere Kinder erleben, Eltern vernetzen sich",
+   "tip_en": "Experience other kids, parents connect"
+  },
+  {
+   "id": "social-061",
+   "area": "social",
+   "from": 10,
+   "to": 24,
+   "de": "Geben-und-Nehmen-Spiele",
+   "en": "Give-and-take games",
+   "tip_de": "„Danke!“ – und zurückgeben",
+   "tip_en": "“Thank you!” – and give it back"
+  },
+  {
+   "id": "social-062",
+   "area": "social",
+   "from": 12,
+   "to": 30,
+   "de": "Gefühle benennen",
+   "en": "Name feelings",
+   "tip_de": "„Du bist wütend, weil …“",
+   "tip_en": "“You're angry because …”"
+  },
+  {
+   "id": "social-063",
+   "area": "social",
+   "from": 15,
+   "to": 30,
+   "de": "Kuscheltier versorgen",
+   "en": "Care for a soft toy",
+   "tip_de": "Füttern, ins Bett bringen, trösten",
+   "tip_en": "Feed it, put it to bed, comfort it"
+  },
+  {
+   "id": "social-064",
+   "area": "social",
+   "from": 18,
+   "to": 36,
+   "de": "Begegnungen auf dem Spielplatz begleiten",
+   "en": "Support playground encounters",
+   "tip_de": "Nicht sofort eingreifen, aber nah sein",
+   "tip_en": "Don't step in at once, but stay close"
+  },
+  {
+   "id": "social-065",
+   "area": "social",
+   "from": 24,
+   "to": 42,
+   "de": "Abwechseln üben",
+   "en": "Practise taking turns",
+   "tip_de": "Rutsche, Würfelspiel, „Jetzt du, dann ich“",
+   "tip_en": "Slide, dice games, “you, then me”"
+  },
+  {
+   "id": "social-066",
+   "area": "social",
+   "from": 24,
+   "to": 48,
+   "de": "Rollenspiele",
+   "en": "Pretend play",
+   "tip_de": "Kaufladen, Arztkoffer, Kochen",
+   "tip_en": "Play shop, doctor's kit, cooking"
+  },
+  {
+   "id": "social-067",
+   "area": "social",
+   "from": 30,
+   "to": 54,
+   "de": "Gefühlskarten und Gefühlsbücher",
+   "en": "Feelings cards and books",
+   "tip_de": "Beim Abendessen: Wie war dein Tag?",
+   "tip_en": "At dinner: how was your day?"
+  },
+  {
+   "id": "social-068",
+   "area": "social",
+   "from": 36,
+   "to": 60,
+   "de": "Verabredung mit einem Freund oder einer Freundin",
+   "en": "Play date with a friend",
+   "tip_de": "Erst bei euch, später auch woanders",
+   "tip_en": "First at your place, later elsewhere too"
+  },
+  {
+   "id": "social-069",
+   "area": "social",
+   "from": 36,
+   "to": 72,
+   "de": "Streit lösen üben",
+   "en": "Practise resolving conflicts",
+   "tip_de": "Gemeinsam Lösungen suchen statt Schuld",
+   "tip_en": "Look for solutions together instead of blame"
+  },
+  {
+   "id": "social-070",
+   "area": "social",
+   "from": 42,
+   "to": 72,
+   "de": "Familienregeln gemeinsam aufstellen",
+   "en": "Set family rules together",
+   "tip_de": "Wenige, klare Regeln – aufmalen",
+   "tip_en": "Few, clear rules – draw them"
+  },
+  {
+   "id": "social-071",
+   "area": "social",
+   "from": 48,
+   "to": 72,
+   "de": "Übernachtung bei Großeltern oder Freunden",
+   "en": "Sleepover at grandparents or friends",
+   "tip_de": "Kuscheltier und Abendritual mitnehmen",
+   "tip_en": "Bring the soft toy and the bedtime routine"
+  },
+  {
+   "id": "social-072",
+   "area": "social",
+   "from": 48,
+   "to": 72,
+   "de": "Verlieren lernen bei Gesellschaftsspielen",
+   "en": "Learn to lose at board games",
+   "tip_de": "Gefühle aushalten, gute Verlierer loben",
+   "tip_en": "Sit with the feelings, praise good losers"
+  },
+  {
+   "id": "social-073",
+   "area": "social",
+   "from": 54,
+   "to": 72,
+   "de": "Kleine Verantwortung übernehmen",
+   "en": "Take on small responsibilities",
+   "tip_de": "Pflanze gießen, Haustier füttern",
+   "tip_en": "Water a plant, feed a pet"
+  },
+  {
+   "id": "social-074",
+   "area": "social",
+   "from": 60,
+   "to": 72,
+   "de": "Hilfsbereitschaft stärken",
+   "en": "Encourage helpfulness",
+   "tip_de": "Jüngeren helfen, Kita-Aufgaben übernehmen",
+   "tip_en": "Help younger kids, take on daycare tasks"
+  },
+  {
+   "id": "mind-075",
+   "area": "mind",
+   "from": 0,
+   "to": 4,
+   "de": "Schwarz-Weiß-Kontraste anschauen",
+   "en": "Look at black-and-white contrasts",
+   "tip_de": "Starke Kontraste sieht ein Baby am besten",
+   "tip_en": "Strong contrasts are easiest for babies to see"
+  },
+  {
+   "id": "mind-076",
+   "area": "mind",
+   "from": 0,
+   "to": 6,
+   "de": "Dinge mit den Augen verfolgen",
+   "en": "Follow things with their eyes",
+   "tip_de": "Mobile oder Spielzeug langsam bewegen",
+   "tip_en": "Move a mobile or toy slowly"
+  },
+  {
+   "id": "mind-077",
+   "area": "mind",
+   "from": 0,
+   "to": 6,
+   "de": "Materialien ertasten",
+   "en": "Explore different materials",
+   "tip_de": "Weich, rau, kühl, knisternd",
+   "tip_en": "Soft, rough, cool, crinkly"
+  },
+  {
+   "id": "mind-078",
+   "area": "mind",
+   "from": 2,
+   "to": 8,
+   "de": "Spiegel entdecken",
+   "en": "Discover the mirror",
+   "tip_de": "Wer ist das? Gesichter machen",
+   "tip_en": "Who's that? Make faces"
+  },
+  {
+   "id": "mind-079",
+   "area": "mind",
+   "from": 4,
+   "to": 10,
+   "de": "Ursache und Wirkung",
+   "en": "Cause and effect",
+   "tip_de": "Rasseln, Knistertücher, Drücken und Klingeln",
+   "tip_en": "Rattles, crinkly cloths, press-and-ring toys"
+  },
+  {
+   "id": "mind-080",
+   "area": "mind",
+   "from": 6,
+   "to": 12,
+   "de": "Ein- und Ausräumen",
+   "en": "Filling and emptying",
+   "tip_de": "Dose mit großen Bausteinen",
+   "tip_en": "A tin with big blocks"
+  },
+  {
+   "id": "mind-081",
+   "area": "mind",
+   "from": 8,
+   "to": 15,
+   "de": "Gegenstände verstecken",
+   "en": "Hide objects",
+   "tip_de": "Unter dem Tuch – noch da?",
+   "tip_en": "Under the cloth – still there?"
+  },
+  {
+   "id": "mind-082",
+   "area": "mind",
+   "from": 10,
+   "to": 20,
+   "de": "Stapelbecher",
+   "en": "Stacking cups",
+   "tip_de": "Stapeln, ineinanderstecken, umwerfen",
+   "tip_en": "Stack, nest, knock over"
+  },
+  {
+   "id": "mind-083",
+   "area": "mind",
+   "from": 12,
+   "to": 24,
+   "de": "Formen-Steckspiel",
+   "en": "Shape sorter",
+   "tip_de": "Erst wenige Formen",
+   "tip_en": "Start with a few shapes"
+  },
+  {
+   "id": "mind-084",
+   "area": "mind",
+   "from": 14,
+   "to": 26,
+   "de": "Umfüllen mit Sand und Wasser",
+   "en": "Pouring sand and water",
+   "tip_de": "Becher, Trichter, Löffel",
+   "tip_en": "Cups, funnels, spoons"
+  },
+  {
+   "id": "mind-085",
+   "area": "mind",
+   "from": 18,
+   "to": 30,
+   "de": "Erste Puzzles (2–4 Teile)",
+   "en": "First puzzles (2–4 pieces)",
+   "tip_de": "Steckpuzzle mit Knöpfen",
+   "tip_en": "Peg puzzles with knobs"
+  },
+  {
+   "id": "mind-086",
+   "area": "mind",
+   "from": 20,
+   "to": 36,
+   "de": "Sortieren nach Farben",
+   "en": "Sort by colour",
+   "tip_de": "Socken, Bausteine, Obst",
+   "tip_en": "Socks, blocks, fruit"
+  },
+  {
+   "id": "mind-087",
+   "area": "mind",
+   "from": 24,
+   "to": 40,
+   "de": "Zählen im Alltag",
+   "en": "Counting in daily life",
+   "tip_de": "Treppenstufen, Teller, Äpfel",
+   "tip_en": "Stairs, plates, apples"
+  },
+  {
+   "id": "mind-088",
+   "area": "mind",
+   "from": 24,
+   "to": 42,
+   "de": "Bauen mit großen Bausteinen",
+   "en": "Building with big blocks",
+   "tip_de": "Türme, Brücken, Garagen",
+   "tip_en": "Towers, bridges, garages"
+  },
+  {
+   "id": "mind-089",
+   "area": "mind",
+   "from": 30,
+   "to": 48,
+   "de": "Memory mit wenigen Paaren",
+   "en": "Memory with a few pairs",
+   "tip_de": "Mit 6 Paaren starten",
+   "tip_en": "Start with 6 pairs"
+  },
+  {
+   "id": "mind-090",
+   "area": "mind",
+   "from": 36,
+   "to": 60,
+   "de": "Experimente mit Wasser",
+   "en": "Water experiments",
+   "tip_de": "Schwimmt es oder sinkt es?",
+   "tip_en": "Does it float or sink?"
+  },
+  {
+   "id": "mind-091",
+   "area": "mind",
+   "from": 36,
+   "to": 60,
+   "de": "Puzzles mit 12–30 Teilen",
+   "en": "Puzzles with 12–30 pieces",
+   "tip_de": "Erst Rand, dann Mitte",
+   "tip_en": "Edges first, then the middle"
+  },
+  {
+   "id": "mind-092",
+   "area": "mind",
+   "from": 42,
+   "to": 66,
+   "de": "Magnete entdecken",
+   "en": "Explore magnets",
+   "tip_de": "Nur große Magnete und mit Aufsicht – kleine sind gefährlich",
+   "tip_en": "Only big magnets and supervised – small ones are dangerous"
+  },
+  {
+   "id": "mind-093",
+   "area": "mind",
+   "from": 48,
+   "to": 72,
+   "de": "Erste Brettspiele",
+   "en": "First board games",
+   "tip_de": "Würfeln und Zählen, z. B. Leiterspiele",
+   "tip_en": "Dice and counting, e.g. snakes and ladders"
+  },
+  {
+   "id": "mind-094",
+   "area": "mind",
+   "from": 48,
+   "to": 72,
+   "de": "Mengen vergleichen",
+   "en": "Compare quantities",
+   "tip_de": "Mehr oder weniger? Zahlen bis 10–20",
+   "tip_en": "More or fewer? Numbers up to 10–20"
+  },
+  {
+   "id": "mind-095",
+   "area": "mind",
+   "from": 54,
+   "to": 72,
+   "de": "Zeit spielerisch erleben",
+   "en": "Experience time playfully",
+   "tip_de": "Sanduhr, Tagesplan mit Bildern",
+   "tip_en": "Sand timer, picture schedule for the day"
+  },
+  {
+   "id": "mind-096",
+   "area": "mind",
+   "from": 60,
+   "to": 72,
+   "de": "Muster und Logikrätsel",
+   "en": "Patterns and logic puzzles",
+   "tip_de": "Rot-Blau-Rot – was kommt dann?",
+   "tip_en": "Red-blue-red – what comes next?"
+  },
+  {
+   "id": "creative-097",
+   "area": "creative",
+   "from": 0,
+   "to": 6,
+   "de": "Spieluhr und sanfte Musik",
+   "en": "Music box and gentle music",
+   "tip_de": "Zum Einschlafen und Zuhören",
+   "tip_en": "For falling asleep and listening"
+  },
+  {
+   "id": "creative-098",
+   "area": "creative",
+   "from": 0,
+   "to": 8,
+   "de": "Zu Musik wiegen und schaukeln",
+   "en": "Sway and rock to music",
+   "tip_de": "Rhythmus mit dem ganzen Körper spüren",
+   "tip_en": "Feel rhythm with the whole body"
+  },
+  {
+   "id": "creative-099",
+   "area": "creative",
+   "from": 0,
+   "to": 8,
+   "de": "Bunte Tücher tanzen lassen",
+   "en": "Make colourful scarves dance",
+   "tip_de": "Über dem Baby schweben lassen",
+   "tip_en": "Let them float above the baby"
+  },
+  {
+   "id": "creative-100",
+   "area": "creative",
+   "from": 3,
+   "to": 12,
+   "de": "Klänge erkunden",
+   "en": "Explore sounds",
+   "tip_de": "Rassel, Glöckchen, Löffel auf Holz",
+   "tip_en": "Rattle, bells, a spoon on wood"
+  },
+  {
+   "id": "creative-101",
+   "area": "creative",
+   "from": 6,
+   "to": 15,
+   "de": "Auf Töpfe trommeln",
+   "en": "Drum on pots",
+   "tip_de": "Kochlöffel und Topf – Lärm ist erwünscht",
+   "tip_en": "Wooden spoon and pot – noise welcome"
+  },
+  {
+   "id": "creative-102",
+   "area": "creative",
+   "from": 8,
+   "to": 18,
+   "de": "Eltern-Kind-Musikgruppe",
+   "en": "Parent-and-child music group",
+   "tip_de": "Singen, Klatschen, Instrumente",
+   "tip_en": "Singing, clapping, instruments"
+  },
+  {
+   "id": "creative-103",
+   "area": "creative",
+   "from": 12,
+   "to": 24,
+   "de": "Fingerfarben",
+   "en": "Finger paint",
+   "tip_de": "Unbedenkliche Farben, großes Papier",
+   "tip_en": "Child-safe paints, big paper"
+  },
+  {
+   "id": "creative-104",
+   "area": "creative",
+   "from": 14,
+   "to": 30,
+   "de": "Kritzeln mit Wachsmalblöcken",
+   "en": "Scribbling with crayon blocks",
+   "tip_de": "Dicke Blöcke liegen gut in der Hand",
+   "tip_en": "Chunky blocks are easy to hold"
+  },
+  {
+   "id": "creative-105",
+   "area": "creative",
+   "from": 18,
+   "to": 36,
+   "de": "Knete und Salzteig",
+   "en": "Play dough and salt dough",
+   "tip_de": "Selbst gemacht: Mehl, Salz, Wasser, Öl",
+   "tip_en": "Homemade: flour, salt, water, oil"
+  },
+  {
+   "id": "creative-106",
+   "area": "creative",
+   "from": 20,
+   "to": 36,
+   "de": "Rasseln selbst basteln",
+   "en": "Make your own shakers",
+   "tip_de": "Dose mit Reis – sehr fest verschließen",
+   "tip_en": "A tin with rice – seal it very tightly"
+  },
+  {
+   "id": "creative-107",
+   "area": "creative",
+   "from": 24,
+   "to": 42,
+   "de": "Verkleiden",
+   "en": "Dressing up",
+   "tip_de": "Kiste mit alten Tüchern, Hüten, Taschen",
+   "tip_en": "A box of old scarves, hats, bags"
+  },
+  {
+   "id": "creative-108",
+   "area": "creative",
+   "from": 24,
+   "to": 48,
+   "de": "Malen mit Pinsel und Wasserfarben",
+   "en": "Painting with brushes and watercolours",
+   "tip_de": "Malkittel, Zeitungspapier unterlegen",
+   "tip_en": "Smock, newspaper underneath"
+  },
+  {
+   "id": "creative-109",
+   "area": "creative",
+   "from": 30,
+   "to": 54,
+   "de": "Kleben und Collagen",
+   "en": "Gluing and collages",
+   "tip_de": "Papierschnipsel, Stoffreste, Naturmaterial",
+   "tip_en": "Paper scraps, fabric, nature finds"
+  },
+  {
+   "id": "creative-110",
+   "area": "creative",
+   "from": 36,
+   "to": 60,
+   "de": "Basteln mit Kinderschere",
+   "en": "Crafting with child scissors",
+   "tip_de": "Erst Streifen schneiden, dann Linien",
+   "tip_en": "Cut strips first, then lines"
+  },
+  {
+   "id": "creative-111",
+   "area": "creative",
+   "from": 36,
+   "to": 72,
+   "de": "Musikalische Früherziehung",
+   "en": "Early music education",
+   "tip_de": "Rhythmus, Singen, erste Instrumente",
+   "tip_en": "Rhythm, singing, first instruments"
+  },
+  {
+   "id": "creative-112",
+   "area": "creative",
+   "from": 42,
+   "to": 66,
+   "de": "Puppentheater spielen",
+   "en": "Puppet theatre",
+   "tip_de": "Socken als Handpuppen, Karton als Bühne",
+   "tip_en": "Socks as puppets, a box as the stage"
+  },
+  {
+   "id": "creative-113",
+   "area": "creative",
+   "from": 48,
+   "to": 72,
+   "de": "Ein Instrument ausprobieren",
+   "en": "Try an instrument",
+   "tip_de": "Trommel, Glockenspiel, Ukulele",
+   "tip_en": "Drum, glockenspiel, ukulele"
+  },
+  {
+   "id": "creative-114",
+   "area": "creative",
+   "from": 48,
+   "to": 72,
+   "de": "Bauen mit Recycling und Naturmaterial",
+   "en": "Build with recycling and nature finds",
+   "tip_de": "Kartons, Rollen, Stöcke, Zapfen",
+   "tip_en": "Boxes, tubes, sticks, cones"
+  },
+  {
+   "id": "creative-115",
+   "area": "creative",
+   "from": 54,
+   "to": 72,
+   "de": "Eigene Bildergeschichten malen",
+   "en": "Draw your own picture stories",
+   "tip_de": "Drei Bilder: Anfang, Mitte, Ende",
+   "tip_en": "Three pictures: beginning, middle, end"
+  },
+  {
+   "id": "creative-116",
+   "area": "creative",
+   "from": 60,
+   "to": 72,
+   "de": "Kindertanz schnuppern",
+   "en": "Try a kids' dance class",
+   "tip_de": "Ballett, Hip-Hop oder kreativer Tanz",
+   "tip_en": "Ballet, hip-hop or creative dance"
+  },
+  {
+   "id": "indep-117",
+   "area": "indep",
+   "from": 0,
+   "to": 6,
+   "de": "Fester Tagesrhythmus",
+   "en": "A steady daily rhythm",
+   "tip_de": "Schlafen, Essen, Spielen in ähnlicher Abfolge",
+   "tip_en": "Sleep, food, play in a similar order"
+  },
+  {
+   "id": "indep-118",
+   "area": "indep",
+   "from": 0,
+   "to": 12,
+   "de": "Wickeln als gemeinsame Zeit",
+   "en": "Changing time as together time",
+   "tip_de": "Ankündigen, was passiert, Kind mitmachen lassen",
+   "tip_en": "Say what's happening, let the child join in"
+  },
+  {
+   "id": "indep-119",
+   "area": "indep",
+   "from": 0,
+   "to": 8,
+   "de": "Hunger- und Müdigkeitszeichen lesen",
+   "en": "Read hunger and tiredness cues",
+   "tip_de": "Früh reagieren – das Kind lernt: ich werde verstanden",
+   "tip_en": "Respond early – the child learns: I'm understood"
+  },
+  {
+   "id": "indep-120",
+   "area": "indep",
+   "from": 2,
+   "to": 10,
+   "de": "Kurz allein spielen lassen",
+   "en": "Short solo play",
+   "tip_de": "In Sichtweite, nicht ständig unterhalten",
+   "tip_en": "Within sight, no need to entertain all the time"
+  },
+  {
+   "id": "indep-121",
+   "area": "indep",
+   "from": 3,
+   "to": 9,
+   "de": "Selbst nach Spielzeug greifen lassen",
+   "en": "Let them reach for toys",
+   "tip_de": "Nicht sofort reichen – kleiner Abstand motiviert",
+   "tip_en": "Don't hand it over at once – a little distance motivates"
+  },
+  {
+   "id": "indep-122",
+   "area": "indep",
+   "from": 6,
+   "to": 12,
+   "de": "Fingerfood selbst essen",
+   "en": "Self-feeding finger food",
+   "tip_de": "Weiche Stücke in Stangenform, immer dabei bleiben",
+   "tip_en": "Soft stick-shaped pieces, always stay close"
+  },
+  {
+   "id": "indep-123",
+   "area": "indep",
+   "from": 8,
+   "to": 15,
+   "de": "Aus dem offenen Becher trinken",
+   "en": "Drink from an open cup",
+   "tip_de": "Wenig einfüllen, Kleckern gehört dazu",
+   "tip_en": "Fill only a little, spills are part of it"
+  },
+  {
+   "id": "indep-124",
+   "area": "indep",
+   "from": 10,
+   "to": 20,
+   "de": "Mit dem Löffel essen üben",
+   "en": "Practise eating with a spoon",
+   "tip_de": "Dicke Breie und Joghurt klappen am besten",
+   "tip_en": "Thick purées and yoghurt work best"
+  },
+  {
+   "id": "indep-125",
+   "area": "indep",
+   "from": 12,
+   "to": 24,
+   "de": "Schuhe und Socken ausziehen",
+   "en": "Take off shoes and socks",
+   "tip_de": "Klettverschlüsse helfen",
+   "tip_en": "Velcro helps"
+  },
+  {
+   "id": "indep-126",
+   "area": "indep",
+   "from": 15,
+   "to": 30,
+   "de": "Hände waschen mit Hilfe",
+   "en": "Wash hands with help",
+   "tip_de": "Tritthocker am Waschbecken",
+   "tip_en": "A step stool at the sink"
+  },
+  {
+   "id": "indep-127",
+   "area": "indep",
+   "from": 18,
+   "to": 36,
+   "de": "Beim Aufräumen helfen",
+   "en": "Help tidy up",
+   "tip_de": "Eine Kiste pro Spielzeugart, Aufräumlied",
+   "tip_en": "One box per toy type, a tidy-up song"
+  },
+  {
+   "id": "indep-128",
+   "area": "indep",
+   "from": 20,
+   "to": 36,
+   "de": "Selbst anziehen üben",
+   "en": "Practise dressing",
+   "tip_de": "Erst Mütze und Hose, Zeit einplanen",
+   "tip_en": "Start with hat and trousers, allow time"
+  },
+  {
+   "id": "indep-129",
+   "area": "indep",
+   "from": 24,
+   "to": 42,
+   "de": "Trocken werden begleiten",
+   "en": "Support toilet learning",
+   "tip_de": "Ohne Druck, wenn das Kind Interesse zeigt",
+   "tip_en": "No pressure, when the child shows interest"
+  },
+  {
+   "id": "indep-130",
+   "area": "indep",
+   "from": 24,
+   "to": 48,
+   "de": "Kleine Aufgaben im Haushalt",
+   "en": "Small household jobs",
+   "tip_de": "Wäsche sortieren, Salat waschen",
+   "tip_en": "Sort laundry, wash lettuce"
+  },
+  {
+   "id": "indep-131",
+   "area": "indep",
+   "from": 30,
+   "to": 54,
+   "de": "Zähne selbst putzen",
+   "en": "Brush teeth themselves",
+   "tip_de": "Danach nachputzen – bis ins Schulalter",
+   "tip_en": "Brush after them – until school age"
+  },
+  {
+   "id": "indep-132",
+   "area": "indep",
+   "from": 36,
+   "to": 60,
+   "de": "Allein anziehen mit Jacke",
+   "en": "Dress alone incl. jacket",
+   "tip_de": "Jacken-Trick: kopfüber auf den Boden legen",
+   "tip_en": "Jacket flip: lay it upside down on the floor"
+  },
+  {
+   "id": "indep-133",
+   "area": "indep",
+   "from": 36,
+   "to": 60,
+   "de": "Tisch decken",
+   "en": "Set the table",
+   "tip_de": "Teller und Besteck in Kinderhöhe",
+   "tip_en": "Plates and cutlery at child height"
+  },
+  {
+   "id": "indep-134",
+   "area": "indep",
+   "from": 42,
+   "to": 72,
+   "de": "Brot schmieren und in der Küche helfen",
+   "en": "Spread bread and help in the kitchen",
+   "tip_de": "Stumpfes Messer, Lernturm",
+   "tip_en": "A blunt knife, a learning tower"
+  },
+  {
+   "id": "indep-135",
+   "area": "indep",
+   "from": 48,
+   "to": 72,
+   "de": "Schleife binden",
+   "en": "Tie shoelaces",
+   "tip_de": "Mit zwei Farben am Schnürsenkel üben",
+   "tip_en": "Practise with two-coloured laces"
+  },
+  {
+   "id": "indep-136",
+   "area": "indep",
+   "from": 48,
+   "to": 72,
+   "de": "Kleines Taschengeld",
+   "en": "Small pocket money",
+   "tip_de": "Wenig, aber regelmäßig – selbst entscheiden lassen",
+   "tip_en": "Little but regular – let them decide"
+  },
+  {
+   "id": "indep-137",
+   "area": "indep",
+   "from": 54,
+   "to": 72,
+   "de": "Rucksack selbst packen",
+   "en": "Pack their own backpack",
+   "tip_de": "Checkliste mit Bildern",
+   "tip_en": "A picture checklist"
+  },
+  {
+   "id": "indep-138",
+   "area": "indep",
+   "from": 54,
+   "to": 72,
+   "de": "Verkehr üben",
+   "en": "Practise traffic safety",
+   "tip_de": "Bordsteinkante = Stopp, Ampel erklären",
+   "tip_en": "Kerb = stop, explain traffic lights"
+  },
+  {
+   "id": "nature-139",
+   "area": "nature",
+   "from": 0,
+   "to": 6,
+   "de": "Am Fenster Vögel und Bäume zeigen",
+   "en": "Show birds and trees from the window",
+   "tip_de": "Benennen, was sich bewegt",
+   "tip_en": "Name what moves"
+  },
+  {
+   "id": "nature-140",
+   "area": "nature",
+   "from": 0,
+   "to": 6,
+   "de": "Viel draußen sein",
+   "en": "Spend lots of time outside",
+   "tip_de": "Bei jedem Wetter, passend angezogen",
+   "tip_en": "In any weather, dressed right"
+  },
+  {
+   "id": "nature-141",
+   "area": "nature",
+   "from": 0,
+   "to": 8,
+   "de": "Spaziergänge mit Blick in den Himmel",
+   "en": "Walks looking at the sky",
+   "tip_de": "Blätter, Wolken, Licht und Schatten",
+   "tip_en": "Leaves, clouds, light and shadow"
+  },
+  {
+   "id": "nature-142",
+   "area": "nature",
+   "from": 3,
+   "to": 12,
+   "de": "Wind, Wasser und Sand fühlen",
+   "en": "Feel wind, water and sand",
+   "tip_de": "Hände ins Wasser, Füße in den Sand",
+   "tip_en": "Hands in water, feet in sand"
+  },
+  {
+   "id": "nature-143",
+   "area": "nature",
+   "from": 6,
+   "to": 15,
+   "de": "Barfuß im Gras",
+   "en": "Barefoot in the grass",
+   "tip_de": "Kitzelt – und stärkt die Füße",
+   "tip_en": "Tickles – and strengthens feet"
+  },
+  {
+   "id": "nature-144",
+   "area": "nature",
+   "from": 6,
+   "to": 14,
+   "de": "Blätter, Blüten und Rinde befühlen",
+   "en": "Feel leaves, blossoms and bark",
+   "tip_de": "Auf dem Arm an Bäumen und Sträuchern stehen bleiben",
+   "tip_en": "Stop at trees and bushes while carrying them"
+  },
+  {
+   "id": "nature-145",
+   "area": "nature",
+   "from": 10,
+   "to": 24,
+   "de": "Tiere im Park oder auf dem Bauernhof",
+   "en": "Animals in the park or on a farm",
+   "tip_de": "Enten füttern nur mit passendem Futter",
+   "tip_en": "Feed ducks only with suitable food"
+  },
+  {
+   "id": "nature-146",
+   "area": "nature",
+   "from": 12,
+   "to": 24,
+   "de": "Steine und Stöcke sammeln",
+   "en": "Collect stones and sticks",
+   "tip_de": "Ein Schatzkästchen für Fundstücke",
+   "tip_en": "A treasure box for finds"
+  },
+  {
+   "id": "nature-147",
+   "area": "nature",
+   "from": 15,
+   "to": 30,
+   "de": "In Pfützen springen",
+   "en": "Jump in puddles",
+   "tip_de": "Matschhose an – Spaß garantiert",
+   "tip_en": "Rain trousers on – fun guaranteed"
+  },
+  {
+   "id": "nature-148",
+   "area": "nature",
+   "from": 18,
+   "to": 36,
+   "de": "Tierbücher und Zoobesuch",
+   "en": "Animal books and a zoo visit",
+   "tip_de": "Tiere im Buch wiederfinden",
+   "tip_en": "Find the animals from the book"
+  },
+  {
+   "id": "nature-149",
+   "area": "nature",
+   "from": 20,
+   "to": 40,
+   "de": "Pflanzen gießen",
+   "en": "Water plants",
+   "tip_de": "Eigene kleine Gießkanne",
+   "tip_en": "Their own little watering can"
+  },
+  {
+   "id": "nature-150",
+   "area": "nature",
+   "from": 24,
+   "to": 48,
+   "de": "Waldspaziergang mit Sammelbeutel",
+   "en": "Forest walk with a collecting bag",
+   "tip_de": "Zapfen, Blätter, Federn",
+   "tip_en": "Cones, leaves, feathers"
+  },
+  {
+   "id": "nature-151",
+   "area": "nature",
+   "from": 30,
+   "to": 54,
+   "de": "Kresse säen",
+   "en": "Grow cress",
+   "tip_de": "Nach wenigen Tagen zu sehen und zu essen",
+   "tip_en": "Visible and edible within days"
+  },
+  {
+   "id": "nature-152",
+   "area": "nature",
+   "from": 36,
+   "to": 60,
+   "de": "Waldtage",
+   "en": "Forest days",
+   "tip_de": "Regelmäßig in denselben Wald – Jahreszeiten erleben",
+   "tip_en": "Same forest regularly – experience the seasons"
+  },
+  {
+   "id": "nature-153",
+   "area": "nature",
+   "from": 36,
+   "to": 60,
+   "de": "Insekten beobachten",
+   "en": "Watch insects",
+   "tip_de": "Becherlupe, danach wieder freilassen",
+   "tip_en": "Bug viewer, then let them go"
+  },
+  {
+   "id": "nature-154",
+   "area": "nature",
+   "from": 42,
+   "to": 66,
+   "de": "Jahreszeiten-Tisch",
+   "en": "Seasons table",
+   "tip_de": "Fundstücke der Saison ausstellen",
+   "tip_en": "Display seasonal finds"
+  },
+  {
+   "id": "nature-155",
+   "area": "nature",
+   "from": 48,
+   "to": 72,
+   "de": "Eigene Pflanze oder Hochbeet",
+   "en": "Own plant or raised bed",
+   "tip_de": "Radieschen und Erdbeeren klappen gut",
+   "tip_en": "Radishes and strawberries work well"
+  },
+  {
+   "id": "nature-156",
+   "area": "nature",
+   "from": 48,
+   "to": 72,
+   "de": "Müll trennen und Natur schützen",
+   "en": "Sort waste and protect nature",
+   "tip_de": "Warum gehört das in welche Tonne?",
+   "tip_en": "Why does it go in which bin?"
+  },
+  {
+   "id": "nature-157",
+   "area": "nature",
+   "from": 54,
+   "to": 72,
+   "de": "Ausflüge ins Museum oder Planetarium",
+   "en": "Trips to a museum or planetarium",
+   "tip_de": "Kinderführungen nutzen",
+   "tip_en": "Use kids' tours"
+  },
+  {
+   "id": "nature-158",
+   "area": "nature",
+   "from": 60,
+   "to": 72,
+   "de": "Wetter beobachten und aufmalen",
+   "en": "Watch and draw the weather",
+   "tip_de": "Wetterkalender für eine Woche",
+   "tip_en": "A weather calendar for a week"
+  },
+  {
+   "id": "langs-159",
+   "area": "langs",
+   "from": 0,
+   "to": 12,
+   "de": "Eine Person – eine Sprache",
+   "en": "One person – one language",
+   "tip_de": "Jede Bezugsperson bleibt bei ihrer Sprache",
+   "tip_en": "Each caregiver sticks to their language"
+  },
+  {
+   "id": "langs-160",
+   "area": "langs",
+   "from": 0,
+   "to": 12,
+   "de": "Portugiesische Wiegenlieder",
+   "en": "Portuguese lullabies",
+   "tip_de": "Lieder aus der eigenen Kindheit weitergeben",
+   "tip_en": "Pass on songs from your own childhood"
+  },
+  {
+   "id": "langs-161",
+   "area": "langs",
+   "from": 0,
+   "to": 18,
+   "de": "Englisch einfach hören lassen",
+   "en": "Let them simply hear English",
+   "tip_de": "Eure Gespräche miteinander sind schon Input",
+   "tip_en": "Your conversations with each other are input already"
+  },
+  {
+   "id": "langs-162",
+   "area": "langs",
+   "from": 6,
+   "to": 18,
+   "de": "Fingerspiele auf Portugiesisch",
+   "en": "Finger plays in Portuguese",
+   "tip_de": "Reime mit Bewegung bleiben hängen",
+   "tip_en": "Rhymes with movement stick"
+  },
+  {
+   "id": "langs-163",
+   "area": "langs",
+   "from": 6,
+   "to": 36,
+   "de": "Englische Kinderlieder",
+   "en": "English nursery songs",
+   "tip_de": "Zum Mitsingen im Auto oder beim Baden",
+   "tip_en": "To sing along in the car or the bath"
+  },
+  {
+   "id": "langs-164",
+   "area": "langs",
+   "from": 10,
+   "to": 30,
+   "de": "Bilderbücher auf Portugiesisch",
+   "en": "Picture books in Portuguese",
+   "tip_de": "Gleiches Buch in zwei Sprachen ist ein Plus",
+   "tip_en": "The same book in two languages is a bonus"
+  },
+  {
+   "id": "langs-165",
+   "area": "langs",
+   "from": 12,
+   "to": 36,
+   "de": "Videocall mit der portugiesischsprachigen Familie",
+   "en": "Video calls with the Portuguese-speaking family",
+   "tip_de": "Kurz und regelmäßig, mit Liedern oder Fotos",
+   "tip_en": "Short and regular, with songs or photos"
+  },
+  {
+   "id": "langs-166",
+   "area": "langs",
+   "from": 18,
+   "to": 36,
+   "de": "Wörter in beiden Sprachen spiegeln",
+   "en": "Mirror words in both languages",
+   "tip_de": "Nicht korrigieren, in der eigenen Sprache wiederholen",
+   "tip_en": "Don't correct, repeat in your own language"
+  },
+  {
+   "id": "langs-167",
+   "area": "langs",
+   "from": 24,
+   "to": 48,
+   "de": "Portugiesischsprachige Spielgruppe suchen",
+   "en": "Find a Portuguese-speaking playgroup",
+   "tip_de": "Andere Kinder machen die Sprache „cool“",
+   "tip_en": "Other kids make the language “cool”"
+  },
+  {
+   "id": "langs-168",
+   "area": "langs",
+   "from": 24,
+   "to": 60,
+   "de": "Sprachen mischen gelassen nehmen",
+   "en": "Take language mixing calmly",
+   "tip_de": "Mischen ist normal und kein Rückschritt",
+   "tip_en": "Mixing is normal and not a setback"
+  },
+  {
+   "id": "langs-169",
+   "area": "langs",
+   "from": 30,
+   "to": 60,
+   "de": "Englische Bücher und Lieder",
+   "en": "English books and songs",
+   "tip_de": "Dritte Sprache spielerisch, ohne Pflicht",
+   "tip_en": "The third language playfully, no pressure"
+  },
+  {
+   "id": "langs-170",
+   "area": "langs",
+   "from": 36,
+   "to": 60,
+   "de": "Hörspiele oder Filme auf Portugiesisch",
+   "en": "Audio stories or films in Portuguese",
+   "tip_de": "Begrenzt, aber gemeinsam schauen",
+   "tip_en": "Limited, but watch together"
+  },
+  {
+   "id": "langs-171",
+   "area": "langs",
+   "from": 36,
+   "to": 72,
+   "de": "Ferien bei der Familie",
+   "en": "Holidays with family",
+   "tip_de": "Eintauchen wirkt Wunder für die Sprache",
+   "tip_en": "Immersion works wonders for the language"
+  },
+  {
+   "id": "langs-172",
+   "area": "langs",
+   "from": 42,
+   "to": 72,
+   "de": "„Wie heißt das auf …?“-Spiel",
+   "en": "“What's that in …?” game",
+   "tip_de": "Drei Sprachen als Rätselspiel",
+   "tip_en": "Three languages as a guessing game"
+  },
+  {
+   "id": "langs-173",
+   "area": "langs",
+   "from": 48,
+   "to": 72,
+   "de": "Portugiesische Buchstaben entdecken",
+   "en": "Discover Portuguese letters",
+   "tip_de": "ç, ã, õ – Lesen in zwei Schriftbildern vorbereiten",
+   "tip_en": "ç, ã, õ – prepare reading in two spelling systems"
+  },
+  {
+   "id": "langs-174",
+   "area": "langs",
+   "from": 54,
+   "to": 72,
+   "de": "„Ich sehe was“ auf Englisch",
+   "en": "“I spy” in English",
+   "tip_de": "Farben und Dinge auf Englisch raten",
+   "tip_en": "Guess colours and things in English"
+  },
+  {
+   "id": "langs-175",
+   "area": "langs",
+   "from": 60,
+   "to": 72,
+   "de": "Unterricht in der Herkunftssprache suchen",
+   "en": "Look for heritage-language classes",
+   "tip_de": "Portugiesisch-Unterricht für Kinder, oft ab der Schule",
+   "tip_en": "Portuguese classes for kids, often from school age"
+  }
+ ]
+}
